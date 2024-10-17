@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos.css">
+    <title>DevNetflix</title>
+</head>
+
+<body>
+    <ul>
+        <li logo>
+            <img src="./img/logo.png" alt="logo" class="img-topo">
+        </li>
+        <li>
+            <img src="./img/avatar.png" alt="avatar" class="img-topo">
+        </li>
+    </ul>
+    <div class="capa">
+        <h1 class="capa-titulo">stranger-things</h1>
+        <p class="capa-descricao">A trama se passa na cidade fictícia de Hawkins, Indiana, em 1983, e gira em torno do
+            desaparecimento de Will, um garoto. A investigação sobre o sumiço leva um grupo de pré-adolescentes a</p>
+        <a href="https://megafilmehdseries.org/serie/stranger-things-2016" class="link-assistir">Assistir</a>
+        <a class="link-info" id="infoBtn">Mais Informações</a>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">X</span>
+            <p>Informações sobre o filme: Stranger Things é uma série de televisão americana de ficção científica e
+                terror criada por Matt e Ross Duffer. A série estreou na Netflix em 15 de julho de 2016.</p>
+        </div>
+    </div>
+
+    <video src="./video/stranger-things.mp4" autoplay muted loop></video>
+
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <h2 class="titulo-carroceu">Principais Filmes e Series</h2>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/f1.jpg" alt="f1" class="imagem-carrossel">
+                <img src="./img/chokehold.jpg" alt="chokehold" class="imagem-carrossel">
+                <img src="./img/hunter.jpg" alt="hunter" class="imagem-carrossel">
+                <img src="./img/abyss.jpg" alt="abyss" class="imagem-carrossel">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/jaula.jpg" alt="jaula" class="imagem-carrossel">
+                <img src="./img/lift.jpg" alt="li" class="imagem-carrossel">
+                <img src="./img/moonfall.jpg" alt="moonfall" class="imagem-carrossel">
+
+
+            </div>
+
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script>
+        // Pegue o modal
+        var modal = document.getElementById("myModal");
+
+        // Pegue o botão que abre o modal
+        var btn = document.getElementById("infoBtn");
+
+        // Pegue o elemento <span> que fecha o modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // Quando o usuário clicar no botão, abre o modal 
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+
+        // Quando o usuário clicar em <span> (x), fecha o modal
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // Quando o usuário clicar em qualquer lugar fora do modal, fecha o modal
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+  </script>  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+
+</body >
+
+</html >
